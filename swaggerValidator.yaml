@@ -1,0 +1,29 @@
+swagger: "2.0"
+info:
+  description: RESTful API
+  version: 1.0.0
+basePath: /api/v1
+schemes:
+  - https
+paths:
+  /users:
+    get:
+      summary: Returns a list of users.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /users/{userId}:
+    get:
+      summary: Return an user by ID.
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          type: integer
+          minimum: 1
+          description: UserID.
+      responses:
+        200:
+          description: OK
