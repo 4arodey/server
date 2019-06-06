@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58670f7d-2f72-433d-b346-657c8ded183c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/migrations/20190409134741_users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema/comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/comment.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/comments/comments.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/comments/selectAttributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/services/users/users.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="58670f7d-2f72-433d-b346-657c8ded183c" name="Default Changelist" comment="pred commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrations/20190306163552_of.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrations/20190306163552_of.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/repository.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/repository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responseHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/responseHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/users/users.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/users/users.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/comment/comment.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comment/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -102,23 +84,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repository/repository.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!block;n#findAllComments#0;n#Repository#0" />
-              </folding>
+            <state relative-caret-position="325">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema/comments.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="637">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -149,6 +128,8 @@
       <find>users</find>
       <find>routeBuilder</find>
       <find>payload</find>
+      <find>connect-redis</find>
+      <find>eslint-plugin-jsx-a11y</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,9 +170,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/services/comments/selectAttributes.js" />
         <option value="$PROJECT_DIR$/routes/user.routes.js" />
-        <option value="$PROJECT_DIR$/comment/comment.js" />
         <option value="$PROJECT_DIR$/passport.js" />
         <option value="$PROJECT_DIR$/repository/repository.js" />
+        <option value="$PROJECT_DIR$/comment/comment.js" />
       </list>
     </option>
   </component>
@@ -216,6 +197,11 @@
             <path>
               <item name="working" type="b2602c69:ProjectViewProjectNode" />
               <item name="working" type="462c0819:PsiDirectoryNode" />
+              <item name="comment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="working" type="b2602c69:ProjectViewProjectNode" />
+              <item name="working" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -228,6 +214,12 @@
               <item name="working" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="comments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="working" type="b2602c69:ProjectViewProjectNode" />
+              <item name="working" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="working" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +394,7 @@
       <workItem from="1558000314021" duration="2647000" />
       <workItem from="1558182920155" duration="4229000" />
       <workItem from="1558426803029" duration="5280000" />
-      <workItem from="1558685809317" duration="44209000" />
+      <workItem from="1558685809317" duration="46128000" />
     </task>
     <task id="LOCAL-00001" summary="second commit!">
       <created>1558426866224</created>
@@ -411,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558426866224</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pred commit">
+      <created>1559805888945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559805888945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pred commit">
+      <created>1559808596738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559808596738</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -447,7 +453,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93562000" />
+    <option name="totallyTimeSpent" value="95481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,13 +468,13 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20054644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20054644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.032894738" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.032894738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -509,7 +515,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit!" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit!" />
+    <MESSAGE value="pred commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="pred commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/eslint/lib/config/config-file.js">
@@ -650,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/services/users/users.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -785,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comment/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -801,11 +794,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/repository.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!block;n#findAllComments#0;n#Repository#0" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
