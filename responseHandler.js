@@ -37,20 +37,26 @@ function postSuccess(actionFn) {
 }
 
 function handleError(app) {
+  app.use((req, res, next) => {
+    const error = new Error('Not found');
+    error.status = HTTP_CODES.NOT_FOUND_ERR;
+    next(error);
+  });
+
   app.use((err, req, res, next) => {
     if (!err) {
       next();
     }
 
     const errObj = {
-      messsage: '',
+      message: '',
       stackTrace: '',
       code: '',
     };
-    errObj.messsage = appConfig.NODE_ENV === 'developer'
-      ? err.message
-      : 'Internal server error';
-
+    // errObj.messsage = appConfig.NODE_ENV === 'developer'
+    //   ? err.message
+    //   : 'Internal server error';
+    errObj.messsage = err.message;
     errObj.stackTrace = appConfig.NODE_ENV === 'developer'
       ? err.stack
       : '';
@@ -61,7 +67,6 @@ function handleError(app) {
     if (err.status === HTTP_CODES.SERVER_ERROR || err.status === HTTP_CODES.NOT_FOUND_ERR) {
       logger.error(err);
     }
-
     const httpErrorCode = getErrorCode(err.status);
 
     res.status(httpErrorCode);
@@ -84,7 +89,6 @@ function getErrorCode(errorStatus) {
 
     default:
       result = HTTP_CODES.SERVER_ERROR;
-
   }
 
   return result;

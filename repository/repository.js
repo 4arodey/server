@@ -18,6 +18,12 @@ class Repository {
     return this.scheme.query().select.apply(this.scheme.query(), attributes);
   }
 
+  findAllComments(id, selectAttrs) {
+    const attributes = this.getAttributes(selectAttrs);
+
+    return this.scheme.query().select.apply(this.scheme.query(), attributes).where('news_id', id);
+  }
+
   getAttributes(selectAttrs) {
     return Array.isArray(selectAttrs) ? selectAttrs : this.selectAttrs;
   }
@@ -33,6 +39,7 @@ class Repository {
   }
 
   create(entity) {
+    console.log(entity);
     return this.scheme.query().insert(entity);
   }
 
@@ -50,3 +57,5 @@ class Repository {
 
 
 module.exports = Repository;
+
+

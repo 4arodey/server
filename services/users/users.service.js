@@ -8,6 +8,6 @@ class UsersService extends Repository {
 }
 
 const usersService = new UsersService(Users, selectAttrs.DEFAULT);
-
+console.log(UsersService);
 
 module.exports = usersService;

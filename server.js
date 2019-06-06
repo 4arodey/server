@@ -16,6 +16,7 @@ const logger = require('./src/logger');
 
 const routeBuilder = require('./routes/index.routes');
 
+
 require('./passport');
 
 createMiddleware(swaggerDocument, app, (err, middleware) => {
@@ -32,10 +33,13 @@ createMiddleware(swaggerDocument, app, (err, middleware) => {
 
   routeBuilder(app, router);
 
+
   responseHandler.handleError(app);
 });
 
 
-app.listen(appConfig.PORT, () => {
+const server = app.listen(appConfig.PORT, () => {
   logger.info(`API is started. The port is ${appConfig.PORT}.`);
 });
+
+require('./comment/comment.js')(server);

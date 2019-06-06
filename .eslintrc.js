@@ -6,7 +6,8 @@ module.exports = {
   "extends": "airbnb",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "no-use-before-define": ["error", { "functions": true, "classes": true }]
     },
     "ecmaVersion": 5
   }

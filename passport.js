@@ -15,7 +15,7 @@ passport.use('login', new LocalStrategy(
   },
   (email, password, cb) => usersService
     .findOne({ email, password })
-    .select(['id'])
+    .select(['id', 'email', 'firstname', 'lastname'])
     .then((user) => {
       if (!user) {
         return cb(null, false, { message: 'Incorrect email or password' });
