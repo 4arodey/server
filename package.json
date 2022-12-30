@@ -32,7 +32,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-react": "^7.12.4",
     "istanbul": "^0.4.5",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1",
     "swagger-express-middleware": "^2.0.1",
     "swagger-express-mw": "^0.1.0",
